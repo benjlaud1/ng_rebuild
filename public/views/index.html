@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ben and Charlie</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="myApp">
+    <h1>Ben and Charlie NG_basics</h1>
+    <div ng-controller="inputController">
+      <input ng-model="firstName" type="text" placeholder="First Name">
+      <input ng-model="lastName" type="text" placeholder="Last Name">
+      <button ng-click="addName()" class="btn btn-success">Add Name</button>
+    </div>
+
+    <div ng-controller='somethingController as bensAtowel'>
+      <!-- <img src="{{something.movieData.Poster}}"> -->
+
+    </div>
+
+  </body>
+</html>
