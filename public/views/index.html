@@ -10,14 +10,17 @@
   </head>
   <body ng-app="myApp">
     <h1>Ben and Charlie NG_basics</h1>
-    <div ng-controller="inputController">
+    <div ng-controller="inputController" ng-init="getNames()">
       <input ng-model="firstName" type="text" placeholder="First Name">
       <input ng-model="lastName" type="text" placeholder="Last Name">
       <button ng-click="addName()" class="btn btn-success">Add Name</button>
+      <div ng-repeat="n in names | orderBy:'firstName'">
+        <h1>{{ n.firstName }} {{ n.lastName}}</h1>
+      </div>
     </div>
 
-    <div ng-controller='somethingController as bensAtowel'>
-      <!-- <img src="{{something.movieData.Poster}}"> -->
+    <div ng-controller='somethingController'>
+
 
     </div>
 

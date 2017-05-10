@@ -5,7 +5,8 @@ var bodyParser = require( 'body-parser' );
 var routes = require( './modules/routes.js' );
 
 // uses
-app.use( bodyParser.urlencoded( { extented: true } ));
+app.use( bodyParser.urlencoded( { extended: true } ));
+app.use( bodyParser.json() );
 app.use( express.static( 'public' ) );
 
 // globals
